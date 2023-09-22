@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WinViewController" customModule="Super_Plinko" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="winBg" translatesAutoresizingMaskIntoConstraints="NO" id="tkr-Uu-WVb">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="win" translatesAutoresizingMaskIntoConstraints="NO" id="HRm-IE-pS4">
+                    <rect key="frame" x="40" y="124" width="240" height="260"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="260" id="tHt-c5-AWG"/>
+                        <constraint firstAttribute="width" constant="240" id="tbQ-qc-ITg"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6v1-kf-2ee">
+                    <rect key="frame" x="90" y="409" width="140" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="140" id="CHP-I0-L1h"/>
+                        <constraint firstAttribute="height" constant="50" id="So8-hR-5gp"/>
+                    </constraints>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" image="next"/>
+                    <connections>
+                        <action selector="nextAction:" destination="-1" eventType="touchUpInside" id="pzI-d5-WMu"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="6v1-kf-2ee" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="5Gg-9g-3DF"/>
+                <constraint firstAttribute="bottom" secondItem="tkr-Uu-WVb" secondAttribute="bottom" id="9yE-sI-6Pm"/>
+                <constraint firstItem="tkr-Uu-WVb" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="BYc-y8-eOl"/>
+                <constraint firstItem="tkr-Uu-WVb" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="XZc-Sr-T1r"/>
+                <constraint firstItem="tkr-Uu-WVb" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="fx7-n9-hfi"/>
+                <constraint firstItem="6v1-kf-2ee" firstAttribute="top" secondItem="HRm-IE-pS4" secondAttribute="bottom" constant="25" id="lw5-A5-JUz"/>
+                <constraint firstItem="HRm-IE-pS4" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="rjF-ub-fl1"/>
+                <constraint firstItem="HRm-IE-pS4" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="-30" id="xDG-Rs-d8c"/>
+            </constraints>
+            <point key="canvasLocation" x="130.53435114503816" y="-11.267605633802818"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="next" width="342" height="126"/>
+        <image name="win" width="943" height="927"/>
+        <image name="winBg" width="1080" height="2400"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
